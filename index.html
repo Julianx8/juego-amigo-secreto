@@ -21,16 +21,18 @@
             <h2 class="section-title">Digite el nombre de sus amigos</h2>
             <div class="input-wrapper">
                 <input type="text" id="nombreIngresado" class="input-name" placeholder="Escribe un nombre">
-                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+                <button on click class="button-add" onclick="agregarAmigo()">Añadir</button>
             </div>
            
+
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+            <!-- Elemento para mostrar el resultado del sorteo aleatorio -->
+            <div id="resultadoSorteo" class="result-list" aria-live="polite"></div>
 
             <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                <button class="button-draw" onclick="sortearUnAmigo()" aria-label="Sortear amigo aleatorio">
                     <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
-                    Sortear amigo
+                    Sortear amigo aleatorio
                 </button>
             </div>
         </section>
